@@ -1,0 +1,26 @@
+/* Basic reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* For lazy loading images */
+.lazy-img {
+  filter: blur(20px);
+}
+
+/* Custom animations and transitions that may not be easily done with Chakra */
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+/* This is needed for the slider animation */
+.slide {
+  transition: transform 1s;
+}
